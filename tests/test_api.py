@@ -1,9 +1,10 @@
-import sys
-sys.path.append("../src")
-from src.app import app
+import sys, os
+sys.path.append(os.path.join(os.path.dirname(__file__), "../src"))
+from app import app
 from fastapi.testclient import TestClient
 
 client = TestClient(app)
+client.__enter__()
 
 def test_health():
     response = client.get("/health")
