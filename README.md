@@ -1,5 +1,11 @@
 ## How to Run
 
+# Customer Churn Prediction API
+
+![CI](https://github.com/HectorAmnicus21/mlops-churn-project/actions/workflows/ci.yml/badge.svg)
+
+ML-сервис для предсказания оттока клиентов (customer churn) на FastAPI...
+
 ### Local
 ```bash
 cd src
